@@ -6,5 +6,4 @@ for(let i = 0; i < arr.length; i++)
 }
 console.log(arr);
 
-// arr.forEach(x=>console.log(x)
-// )
+let val=[10,20,"hello",true]
