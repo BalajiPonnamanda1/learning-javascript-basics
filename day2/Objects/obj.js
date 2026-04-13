@@ -19,10 +19,12 @@ for (const element of users) {
     }
 }
 
-// for (const key in object) {
-//     if (!Object.hasOwn(object, key)) continue;
-    
-//     const element = object[key];
-    
-    
-// }
+// Functions
+
+function myFun(a,b)
+{
+    return a+b;
+}
+console.log(myFun(4,9));
+console.log(myFun);
+
