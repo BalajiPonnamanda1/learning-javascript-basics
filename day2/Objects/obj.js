@@ -21,10 +21,41 @@ for (const element of users) {
 
 // Functions
 
-function myFun(a,b)
+const arr=(a,b)=>
 {
     return a+b;
 }
-console.log(myFun(4,9));
-console.log(myFun);
+// console.log(myFun(4,9));
+const arr1=function myFun(a,b)
+{
+    return a-b;
+}
+console.log(arr(4,9));
+let a=10,b=20;
+let sym='%';
+doMath(a,b,sym);
+function doMath(a,b,sym)
+{
+    switch(sym){
+        case '+':
+            console.log(`addition of ${a} & ${b} is ${a+b}`);
+            break;
+        case '-':
+            console.log(`subtraction of ${a} & ${b} is ${a-b}`);
+            break;
+        case '*':
+            console.log(`multiplication of ${a} & ${b} is ${a*b}`);
+            break;
+        case '/':
+            console.log(`division of ${a} & ${b} is ${a/b}`);
+            break;
+        case '**':
+            console.log(`power of ${a} & ${b} is ${a**b}`);
+            break;
+        case '%':
+            console.log(`remainder of ${a} & ${b} is ${a % b}`);
+            break;
+            
+    }
+}
 
