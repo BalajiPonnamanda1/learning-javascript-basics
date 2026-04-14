@@ -7,4 +7,7 @@ const val = function(a, b){
     console.log(a + b);
 }
 
-val(2,3);
+// dom practice
+let id = document.getElementById("id");
+id.innerHTML = '<b>hello developer </b>'
+id.style.color = '#ae1002'
