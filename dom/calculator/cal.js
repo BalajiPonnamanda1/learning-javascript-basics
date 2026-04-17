@@ -19,10 +19,14 @@ op.forEach((ele) => {
     ele.style.fontSize = '26px'
     ele.style.fontWeight = '700'
     ele.addEventListener("click",()=>{
-        if(sym !== '')
+        if(sym !== '' && ans !== 0)
         {
             c = answer();
-        } else {
+        } 
+        else if(sym !== '' && ans === 0) {
+            sym = ele.innerText;
+        }
+        else {
             c = parseInt(msg.innerText);
         }
         sym = ele.innerText;
